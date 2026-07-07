@@ -1,0 +1,57 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const title = 'Proyectos — Ander-Labs';
+const description = 'Productos concretos de Anderson Ruiz: blog, wiki, automatizaciones Hermes, sitio Astro y piloto AISaGrowth.';
+---
+
+<Layout title={title} description={description} lang="es">
+  <main class="page">
+    <h1>Proyectos</h1>
+    <p class="subtitle">Lo que realmente entrego. Sin humo de growth.</p>
+    <ul class="project-list">
+      <li>
+        <strong>Piloto AISaGrowth</strong>
+        <p>
+          Producto AI-native para clínicas dentales privadas en LATAM. Market discovery, automatización agentica y economía unitaria clara — no un servicio productizado fingiendo ser SaaS. Construido para el mercado local, en español, con restricciones de datos reales.
+        </p>
+      </li>
+      <li>
+        <strong>Ander-Labs Blog</strong>
+        <p>
+          Escritura técnica prioritaria en inglés sobre AI local, control de costos, sistemas de agentes (Hermes, MCP, A2A) y la transición admin→dev. Hospedado en Blogger. Publicado de forma constante, no como "contenido por contenido."
+        </p>
+        <a href="https://ander-labs.blogspot.com" target="_blank" rel="noopener">Abrir Blogger</a>
+      </li>
+      <li>
+        <strong>Wiki interna (AISaGrowth / Ander-Labs)</strong>
+        <p>
+          Knowledge base estructurada para operaciones de AISaGrowth y flujos Ander-Labs. No es un tumbleweed — está realmente actualizada. Contiene SOPs, notas de arquitectura y docs de tooling para no depender de una sola cabeza.
+        </p>
+      </li>
+      <li>
+        <strong>Sistema de automatización Hermes</strong>
+        <p>
+          Daily post factory, pasada de revisión de imágenes, notificaciones Telegram y automatización de knowledge base interna. Construido sobre Hermes Agent con loops de Claude Code y tooling MCP. Ya no hago copy-paste manual.
+        </p>
+      </li>
+      <li>
+        <strong>Sitio de portafolio Ander-Labs (este proyecto)</strong>
+        <p>
+          Astro + dark theme, bilingüe EN/ES, dependencias mínimas, builds rápidos. Funciona como puerta de entrada para clientes, colaboradores y cualquiera que prefiera señal real sobre humo de portafolio.
+        </p>
+      </li>
+      <li>
+        <strong>Repositorio de investigación MCP + A2A</strong>
+        <p>
+          Experimentos y prototipos alrededor de Model Context Protocol y patrones Agent-to-Agent. No es un framework — es un espacio pragmático para entender qué funciona antes de comprometerse.
+        </p>
+      </li>
+    </ul>
+  </main>
+</Layout>
+
+<style>
+  .project-list li strong { display: block; margin: 0 0 6px; font-size: 16px; }
+  .project-list li p { margin: 0 0 8px; }
+  .project-list li a { font-weight: 700; }
+</style>

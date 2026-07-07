@@ -1,0 +1,49 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const title = 'Contact — Ander-Labs';
+const description = 'Contact Anderson Ruiz for collaborations, projects, and business development in LATAM.';
+---
+
+<Layout title={title} description={description} lang="en">
+  <main class="page">
+    <h1>Contact</h1>
+    <p class="subtitle">
+      Real conversations only. No spam, no cold outreach templates.
+    </p>
+
+    <div class="contact-block">
+      <h2>Email</h2>
+      <p>
+        <a href="mailto:contact@ander-labs.site">contact@ander-labs.site</a>
+      </p>
+    </div>
+
+    <div class="contact-block">
+      <h2>Socials</h2>
+      <ul class="social-list">
+        <li><a href="https://github.com/Ander-Labs" target="_blank" rel="noopener">GitHub — Ander-Labs</a></li>
+        <li><a href="https://www.linkedin.com/in/ander-labs/" target="_blank" rel="noopener">LinkedIn — in/ander-labs</a></li>
+        <li><a href="https://www.instagram.com/ander.labs/" target="_blank" rel="noopener">Instagram — @ander.labs</a></li>
+        <li><a href="https://x.com/Ander_Labs" target="_blank" rel="noopener">X / Twitter — @Ander_Labs</a></li>
+        <li><a href="https://www.youtube.com/@Ander-Labs" target="_blank" rel="noopener">YouTube — @Ander-Labs</a></li>
+        <li><a href="https://gitlab.com/Ander-Labs" target="_blank" rel="noopener">GitLab — Ander-Labs</a></li>
+      </ul>
+    </div>
+
+    <div class="contact-block">
+      <h2>Notes</h2>
+      <p>
+        I check email regularly. For quick questions or collaborations, write directly. I do not respond to generic inquiries from agencies or recruiters who have not read my work.
+      </p>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .contact-block { margin: 0 0 30px; max-width: 760px; }
+  .contact-block h2 { font-size: 18px; color: var(--accent); margin: 0 0 10px; }
+  .contact-block p, .contact-block a { color: #cbd5e1; font-size: 16px; }
+  .social-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+  .social-list li a { color: var(--accent); font-weight: 600; }
+  p { color: #cbd5e1; margin: 0 0 18px; }
+</style>

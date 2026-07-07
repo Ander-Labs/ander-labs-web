@@ -1,0 +1,32 @@
+---
+import Layout from '../layouts/Layout.astro';
+const title = 'Blog — Ander-Labs';
+const description = 'Escritos técnicos sobre negocio AI-native, agentes locales y herramientas para developers. Prioridad en inglés.';
+---
+<Layout title={title} description={description} lang="es">
+  <main class="page">
+    <h1>Blog</h1>
+    <p class="subtitle">Últimos posts y notas.</p>
+    <ul class="post-list">
+      <li>
+        <a href="https://ander-labs.blogspot.com/2026/07/how-im-building-ai-native-company_01499273445.html" target="_blank" rel="noopener">
+          How I’m building an AI-native company without Anthropic APIs
+        </a>
+        <p>Serie sobre AISaGrowth, restricciones de costos y portabilidad de modelos.</p>
+      </li>
+      <li>
+        <a href="https://ander-labs.blogspot.com/2026/07/daily-digest-mapping-europes-ai.html" target="_blank" rel="noopener">
+          Daily digest: Mapping Europe’s AI Workforce Opportunity
+        </a>
+        <p>Takeaways operativos para despliegue de IA consciente del costo.</p>
+      </li>
+      <li>
+        <a href="https://ander-labs.blogspot.com/2026/07/the-one-metric-every-ai-startup-should.html" target="_blank" rel="noopener">
+          The one metric every AI startup should track: cost per solved intent
+        </a>
+        <p>Economía unitaria antes del scale.</p>
+      </li>
+    </ul>
+    <p><a href="https://ander-labs.blogspot.com" target="_blank" rel="noopener">Abrir blog completo →</a></p>
+  </main>
+</Layout>

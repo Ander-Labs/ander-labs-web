@@ -1,0 +1,40 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  lang?: 'en' | 'es';
+}
+
+const { title, description = '', lang = 'en' } = Astro.props;
+const currentLang = lang === 'es' ? 'es' : 'en';
+const otherLang = lang === 'es' ? 'en' : 'es';
+const otherPath = lang === 'es' ? '/' : '/es';
+const otherLabel = lang === 'es' ? 'English' : 'Español';
+---
+<html lang={currentLang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a class="brand" href="/">Ander-Labs</a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/blog">Blog</a>
+        <a href="/projects">Projects</a>
+        <a href="/contact">Contact</a>
+        <a href={otherPath} class="lang-switch">{otherLabel}</a>
+      </div>
+    </nav>
+    <slot />
+    <footer class="footer">
+      <p>© {new Date().getFullYear()} Ander-Labs — Anderson Ruiz</p>
+    </footer>
+  </body>
+</html>

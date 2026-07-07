@@ -1,0 +1,69 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const title = 'Sobre mí — Ander-Labs';
+const description = 'Conoce a Anderson Ruiz: desarrollador full stack autodidacta, ex administrador, construyendo AISaGrowth para clínicas dentales en LATAM.';
+---
+
+<img src="/images/profile.jpg" alt="Anderson Ruiz" class="profile-photo" />
+
+<Layout title={title} description={description} lang="es">
+  <main class="page">
+    <div class="about">
+      <h1>Sobre mí</h1>
+      <p class="subtitle">
+        Autodidacta. Operador. Construyendo productos reales en LATAM.
+      </p>
+
+      <div class="bio">
+        <p>
+          Soy <strong>Anderson Ruiz</strong>, desarrollador full stack desde <strong>Perú, con más de 5 años de experiencia</strong>. Vengo de administración de empresas y lo traigo a código: entiendo negocio, costos y lo que realmente necesita un cliente antes de escribir la primera línea.
+        </p>
+        <p>
+          Construyo <strong>productos AI-native</strong> para negocios reales: con economía unitaria clara, sin vendor lock-in, y con honestidad brutal sobre lo que funciona y lo que no. Mi foco actual es <strong>AISaGrowth</strong>: market discovery y automatización para clínicas dentales privadas en LATAM.
+        </p>
+        <p>
+          También escribo, automatizo y experimento. Este sitio, el wiki interno, el post factory Hermes y el build Astro los trato como productos: pequeños, concretos, accionables.
+        </p>
+        <p>
+          Stack: <strong>Python, TypeScript, Node, Astro, React, SQL</strong>. Sistemas de agentes (Hermes, MCP, A2A). Entrego rápido, refactorizo con evidencia y llamo a las malas ideas por su nombre.
+        </p>
+      </div>
+
+      <h2>En qué estoy ahora</h2>
+      <ul>
+        <li><strong>Piloto AISaGrowth</strong> — market discovery + automatizaciones agenticas para clínicas dentales privadas en LATAM.</li>
+        <li><strong>Ander-Labs Blog</strong> — escritura técnica en inglés sobre AI local, control de costos y sistemas de agentes.</li>
+        <li><strong>Wiki interna</strong> — knowledge base para AISaGrowth y operaciones de Ander-Labs.</li>
+        <li><strong>Automatizaciones Hermes</strong> — daily post factory, revisión de imágenes, notificaciones Telegram.</li>
+      </ul>
+
+      <h2>Principios</h2>
+      <ul>
+        <li>Entregar acciones pequeñas y concretas todos los días.</li>
+        <li>Sin vendor lock-in: elijo herramientas, no religiones.</li>
+        <li>Honestidad brutal con costos, alcance y calidad.</li>
+        <li>Disciplina autodidacta: aprendo construyendo.</li>
+      </ul>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .profile-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 999px;
+    object-fit: cover;
+    border: 1px solid var(--border);
+    margin-bottom: 22px;
+    display: block;
+  }
+  .about h1 { font-size: clamp(30px, 5vw, 56px); margin: 0 0 6px; }
+  .about .subtitle { color: var(--muted); margin: 0 0 30px; }
+  .bio p { color: #cbd5e1; margin: 0 0 18px; max-width: 760px; }
+  .bio p strong { color: var(--fg); }
+  .about h2 { font-size: 18px; margin: 32px 0 14px; color: var(--accent); }
+  .about ul { padding-left: 22px; color: #cbd5e1; margin: 0 0 18px; max-width: 760px; }
+  .about li { margin: 0 0 8px; }
+  .about li strong { color: var(--fg); }
+</style>

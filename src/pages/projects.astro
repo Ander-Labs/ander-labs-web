@@ -1,0 +1,57 @@
+---
+import Layout from '../layouts/Layout.astro';
+const title = 'Projects — Ander-Labs';
+const description = 'Concrete products built by Anderson Ruiz: blog, wiki, Hermes automations, Astro site, and the AISaGrowth pilot.';
+---
+
+<Layout title={title} description={description} lang="en">
+  <main class="page">
+    <h1>Projects</h1>
+    <p class="subtitle">What I actually ship. No side-hustle fluff.</p>
+    <ul class="project-list">
+      <li>
+        <strong>AISaGrowth pilot</strong>
+        <p>
+          AI-native product for private dental clinics in LATAM. Market discovery, agentic automation, and clear unit economics — not a productized service pretending to be a SaaS. Built for the local market, in Spanish, with real data constraints.
+        </p>
+      </li>
+      <li>
+        <strong>Ander-Labs Blog</strong>
+        <p>
+          English-first technical writing on local AI, cost control, agent systems (Hermes, MCP, A2A), and the admin→dev journey. Hosted on Blogger. Published consistently, not as "content for content's sake."
+        </p>
+        <a href="https://ander-labs.blogspot.com" target="_blank" rel="noopener">Open Blogger</a>
+      </li>
+      <li>
+        <strong>Internal wiki (AISaGrowth / Ander-Labs)</strong>
+        <p>
+          Structured knowledge base for AISaGrowth operations and Ander-Labs workflows. Not a tumbleweed — actually updated. Contains SOPs, architecture notes, and tooling docs so the team does not depend on a single brain.
+        </p>
+      </li>
+      <li>
+        <strong>Hermes-based automation system</strong>
+        <p>
+          Daily post factory, image review pass, Telegram notifications, and internal knowledge base automation. Built on Hermes Agent with Claude Code loops and MCP tooling. No manual copy-paste from me anymore.
+        </p>
+      </li>
+      <li>
+        <strong>Ander-Labs portfolio site (this project)</strong>
+        <p>
+          Astro + dark theme, bilingual EN/ES, minimal dependencies, fast builds. Used as a front door for clients, collaborators, and anyone who wants real signal over portfolio fluff.
+        </p>
+      </li>
+      <li>
+        <strong>MCP + A2A research repo</strong>
+        <p>
+          Experiments and prototypes around Model Context Protocol and Agent-to-Agent patterns. Not a framework — a pragmatic workspace for understanding what works before committing to it.
+        </p>
+      </li>
+    </ul>
+  </main>
+</Layout>
+
+<style>
+  .project-list li strong { display: block; margin: 0 0 6px; font-size: 16px; }
+  .project-list li p { margin: 0 0 8px; }
+  .project-list li a { font-weight: 700; }
+</style>
